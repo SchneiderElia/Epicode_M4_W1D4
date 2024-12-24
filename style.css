@@ -280,3 +280,8 @@ ul {
   border-radius: 7px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.274);
 }
+
+.title {
+  margin-top: 12px;
+  font-size: 16px;
+}

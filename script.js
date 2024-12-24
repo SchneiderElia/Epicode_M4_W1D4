@@ -19,6 +19,7 @@ fetch(eminemAPI)
         console.log(eminemAlbum[i])
         console.log(eminemAlbum[i]['album']['cover_medium'])
         let coverAlbum = eminemAlbum[i]['album']['cover_medium']
+        let coverTitle = eminemAlbum[i]['album']['title']
 
         let card = document.createElement('div')
     card.className = "card"
@@ -31,25 +32,12 @@ fetch(eminemAPI)
 
     let title = document.createElement('h5')
     title.className = 'title'
-    title.innerText ='Title'
+    title.innerText = coverTitle
     card.appendChild(title)
 
         
 
     }
-
-    let card = document.createElement('div')
-    card.className = "card"
-    eminemSection.appendChild(card)
-
-    let cover = document.createElement('div')
-    cover.className = "cover"
-    card.appendChild(cover)
-
-    let title = document.createElement('h5')
-    title.className = 'title'
-    title.innerText ='Title'
-    card.appendChild(title)
 
 })
 .catch(error => console.log('Something wen wrong = ' + error))
@@ -76,6 +64,7 @@ fetch(metallicaAPI)
         console.log(metallicaAlbum[i])
         console.log(metallicaAlbum[i]['album']['cover_medium'])
         let coverAlbum = metallicaAlbum[i]['album']['cover_medium']
+        let coverTitle = metallicaAlbum[i]['album']['title']
 
         let card = document.createElement('div')
     card.className = "card"
@@ -88,25 +77,14 @@ fetch(metallicaAPI)
 
     let title = document.createElement('h5')
     title.className = 'title'
-    title.innerText ='Title'
+    title.innerText = coverTitle
     card.appendChild(title)
 
         
 
     }
 
-    let card = document.createElement('div')
-    card.className = "card"
-    metallicaSection.appendChild(card)
-
-    let cover = document.createElement('div')
-    cover.className = "cover"
-    card.appendChild(cover)
-
-    let title = document.createElement('h5')
-    title.className = 'title'
-    title.innerText ='Title'
-    card.appendChild(title)
+ 
 
 })
 .catch(error => console.log('Something wen wrong = ' + error))
@@ -133,6 +111,7 @@ fetch(queenAPI)
         console.log(queenAlbum[i])
         console.log(queenAlbum[i]['album']['cover_medium'])
         let coverAlbum = queenAlbum[i]['album']['cover_medium']
+        let coverTitle = queenAlbum[i]['album']['title']
 
         let card = document.createElement('div')
     card.className = "card"
@@ -145,25 +124,13 @@ fetch(queenAPI)
 
     let title = document.createElement('h5')
     title.className = 'title'
-    title.innerText ='Title'
+    title.innerText = coverTitle
     card.appendChild(title)
 
         
 
     }
 
-    let card = document.createElement('div')
-    card.className = "card"
-    queenSection.appendChild(card)
-
-    let cover = document.createElement('div')
-    cover.className = "cover"
-    card.appendChild(cover)
-
-    let title = document.createElement('h5')
-    title.className = 'title'
-    title.innerText ='Title'
-    card.appendChild(title)
 
 })
 .catch(error => console.log('Something wen wrong = ' + error))
